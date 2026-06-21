@@ -1,0 +1,392 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مطعم سفره | أطباق شرقية مميزة</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- زر تبديل الوضع -->
+    <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </button>
+    
+    <!-- Header Section -->
+    <header id="home">
+        <div class="top-bar">
+            <div class="logo">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHBhdGggZD0iTTUwIDIwQzMzLjQgMjAgMjAgMzMuNCAyMCA1MHMxMy40IDMwIDMwIDMwIDMwLTEzLjQgMzAtMzBTNjYuNiAyMCA1MCAyMHptMCA1MGMtMTEuMSAwLTIwLTguOS0yMC0yMHM4LjktMjAgMjAtMjAgMjAgOC45IDIwIDIwLTguOSAyMC0yMCAyMHoiIGZpbGw9IiNlYjQ0MzMiLz48cGF0aCBkPSJNNTUgNDVoLTEwYy0xLjEgMC0yIC45LTIgMnYxMGMwIDEuMS45IDIgMiAyaDEwYzEuMSAwIDItLjkgMi0yVjQ3YzAtMS4xLS45LTItMi0yem0tNSA1YzIuOCAwIDUgMi4yIDUgNXMtMi4yIDUtNSA1LTUtMi4yLTUtNSAyLjItNSA1LTV6IiBmaWxsPSIjZmZmIi8+PC9zdmc+" alt="شعار مطعم الحنين" width="40" height="40">
+                <span>سفره</span>
+            </div>
+            <button class="mobile-menu-btn" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#about">من نحن</a></li>
+                <li><a href="#menu">قائمة الطعام</a></li>
+                <li><a href="#gallery">معرض الصور</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+        </div>
+        
+        <div class="hero-content">
+            <h1>تجربة طعام لا تُنسى</h1>
+            <p>في مطعمنا نقدم لكم أفضل الأطباق الشرقية التقليدية بلمسة عصرية. مكونات طازجة ووصفات أصلية تم تناقلها عبر الأجيال.</p>
+            <div>
+                <a href="#menu" class="btn">تصفح القائمة</a>
+                <a href="#contact" class="btn btn-outline">حجز طاولة</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-title">
+            <h2>من نحن</h2>
+        </div>
+        
+        <div class="about-content">
+            <div class="about-text">
+                <h3>قصتنا</h3>
+                <p>قمنا بتأسيس مطعمنا عام 2026 على يدناالذي كان حًلمنا تقديم الأطباق الشرقية التقليدية بأسلوب عصري. بدأ المطعم كمكان صغير في وسط المدينة، ومنذ ذلك الحين نمت سمعتنا لتصبح واحدة من أشهر المطاعم في المنطقة.</p>
+                <p>نحن نؤمن بأن الطعام الجيد يبدأ بالمكونات الطازجة. لذلك نتعامل مع موردين محليين موثوقين لتقديم أفضل الخضروات والفواكه واللحوم. كل طبق نقدمه يعكس شغفنا بالطهي ورغبتنا في إسعاد ضيوفنا.</p>
+                <p>طاقمنا من الطهاة المهرة يدمج بين التقاليد والابتكار لخلق تجربة طعام لا تُنسى. سواء كنت تبحث عن عشاء رومانسي أو احتفال عائلي، مطعم الحنين هو الخيار الأمثل.</p>
+            </div>
+            
+           
+        </div>
+    </section>
+    
+    <!-- Menu Section -->
+    <section id="menu">
+        <div class="section-title">
+            <h2>قائمة الطعام</h2>
+        </div>
+        
+        <div class="menu-categories">
+            <button class="category-btn active" data-category="all">الكل</button>
+            <button class="category-btn" data-category="appetizers">المقبلات</button>
+            <button class="category-btn" data-category="main">الأطباق الرئيسية</button>
+            <button class="category-btn" data-category="desserts">الحلويات</button>
+            <button class="category-btn" data-category="drinks">المشروبات</button>
+        </div>
+        
+        <div class="menu-items">
+            <!-- Appetizers -->
+            <div class="menu-item" data-category="appetizers">
+                <div class="menu-item-image">
+                    <img src="images/myffoodd.jpg" alt="حمص بالطحينة">
+                </div>
+                <div class="menu-item-content">
+                    <div class="menu-item-header">
+                        <h3>حمص بالطحينة</h3>
+                        <div class="price">12 ريال</div>
+                    </div>
+                    <p>حمص طازج مع طحينة وزيت زيتون وليمون</p>
+                </div>
+            </div>
+            
+            <div class="menu-item" data-category="appetizers">
+                <div class="menu-item-image">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/%D8%AA%D8%A8%D9%88%D9%84%D8%A9_%D9%84%D8%A8%D9%86%D8%A7%D9%86%D9%8A%D8%A9.jpg" alt="تبولة">
+                </div>
+                <div class="menu-item-content">
+                    <div class="menu-item-header">
+                        <h3>تبولة</h3>
+                        <div class="price">14 ريال</div>
+                    </div>
+                    <p>بقدونس طازج مع برغل، بندورة، بصل، نعناع وليمون</p>
+                </div>
+            </div>
+            
+            <!-- Main Dishes -->
+            <div class="menu-item" data-category="main">
+                <div class="menu-item-image">
+                    <img src="images/photo.jpg" alt="منسف">
+                </div>
+                <div class="menu-item-content">
+                    <div class="menu-item-header">
+                        <h3>منسف</h3>
+                        <div class="price">42 ريال</div>
+                    </div>
+                    <p>لحم ضأن مطهو باللبن مع أرز ولبن ومكسرات</p>
+                </div>
+            </div>
+            
+            <div class="menu-item" data-category="main">
+                <div class="menu-item-image">
+                    <img src="images/emmm.jpg" alt="كباب">
+                </div>
+                <div class="menu-item-content">
+                    <div class="menu-item-header">
+                        <h3>كباب مشوي</h3>
+                        <div class="price">38 ريال</div>
+                    </div>
+                    <p>لحم بقري مشوي مع خضار مشكلة وأرز بسمتي</p>
+                </div>
+            </div>
+            
+            <div class="menu-item" data-category="main">
+                <div class="menu-item-image">
+                    <img src="images/image(1).jfif" alt="مقلوبة">
+                </div>
+                <div class="menu-item-content">
+                    <div class="menu-item-header">
+                        <h3>مقلوبة دجاج</h3>
+                        <div class="price">35 ريال</div>
+                    </div>
+                    <p>دجاج مع أرز وخضار مشكلة، تقدم مع لبن وطماطم</p>
+                </div>
+            </div>
+            
+            <!-- Desserts -->
+            <div class="menu-item" data-category="desserts">
+                <div class="menu-item-image">
+                    <img src="images/imm.jfif" alt="كنافة">
+                </div>
+                <div class="menu-item-content">
+                    <div class="menu-item-header">
+                        <h3>كنافة</h3>
+                        <div class="price">18 ريال</div>
+                    </div>
+                    <p>كنافة نابلسية تقليدية مع جبنة عكاوي ومكسرات</p>
+                </div>
+            </div>
+            
+            <div class="menu-item" data-category="desserts">
+                <div class="menu-item-image">
+                    <img src="images/imag (1).jfif" alt="بقلاوة">
+                </div>
+                <div class="menu-item-content">
+                    <div class="menu-item-header">
+                        <h3>بقلاوة</h3>
+                        <div class="price">16 ريال</div>
+                    </div>
+                    <p>بقلاوة محشية بالفستق الحلبي وعسل طبيعي</p>
+                </div>
+            </div>
+            
+            <!-- Drinks -->
+            <div class="menu-item" data-category="drinks">
+                <div class="menu-item-image">
+                    <img src="images/images(1).jfif" alt="قهوة عربية">
+                </div>
+                <div class="menu-item-content">
+                    <div class="menu-item-header">
+                        <h3>قهوة عربية</h3>
+                        <div class="price">10 ريال</div>
+                    </div>
+                    <p>قهوة عربية تقليدية مع هيل</p>
+                </div>
+            </div>
+            
+            <div class="menu-item" data-category="drinks">
+                <div class="menu-item-image">
+                    <img src="images/imagesss(1).jfif" alt="عصير ليمون بالنعناع">
+                </div>
+                <div class="menu-item-content">
+                    <div class="menu-item-header">
+                        <h3>ليمون بالنعناع</h3>
+                        <div class="price">12 ريال</div>
+                    </div>
+                    <p>عصير ليمون طازج مع نعناع طبيعي</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="section-title">
+            <h2>معرض الصور</h2>
+        </div>
+        
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/imageso(1).jfif" alt="مطعم">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="images/c71d32b8-da0d-45fc-88b3-af07d6cab1fc.jpg" alt="مطبخ">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="images/imagesv(1).jfif" alt="طعام">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="images/imagest(1).jfif" alt="ديكور">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="images/imagesii(1).jfif" alt="أطباق">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="images/483d8df877b31405c1e8fe4247f02d86.jpg" alt="مطعم داخلي">
+                <div class="overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-title">
+            <h2>اتصل بنا</h2>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>معلومات الاتصال</h3>
+                
+                <div class="contact-detail">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>العنوان</h4>
+                        <p> تعز، اليمن</p>
+                    </div>
+                </div>
+                
+                <div class="contact-detail">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h4>الهاتف</h4>
+                        <p>+967 000000000</p>
+                    </div>
+                </div>
+                
+                <div class="contact-detail">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>البريد الإلكتروني</h4>
+                        <p>sofra@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-detail">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>ساعات العمل</h4>
+                        <p>الأحد - الخميس: 10:00 صباحا - 11:00 مساءً</p>
+                        <p>الجمعة - السبت: 1:00 ظهراً - 12:00 منتصف الليل</p>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <form id="reservationForm">
+                    <div class="form-group">
+                        <label for="name">الاسم الكامل</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">رقم الهاتف</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="date">تاريخ الحجز</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">الرسالة (اختياري)</label>
+                        <textarea id="message"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">حجز طاولة</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>مطعم سفره</h3>
+                <p>نسعى لتقديم أفضل تجربة طعام شرقية مع الحفاظ على الأصالة والجودة العالية. كل طبق نقدمه يحمل قصة وتاريخ يمتد لقرون.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>روابط سريعة</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#about">من نحن</a></li>
+                    <li><a href="#menu">قائمة الطعام</a></li>
+                    <li><a href="#gallery">معرض الصور</a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>ساعات العمل</h3>
+                <p>الأحد - الخميس: 10:00 صباحاً - 11:00 مساءً</p>
+                <p>الجمعة - السبت: 1:00 ظهراً - 12:00 منتصف الليل</p>
+                <p>العطل الرسمية: 6:00 مساءً - 1:00 صباحاً</p>
+            </div>
+            
+            <div class="footer-col">
+                <h3>النشرة البريدية</h3>
+                <p>اشترك في نشرتنا البريدية لتصلك أحدث العروض والأحداث الخاصة</p>
+                <form id="newsletterForm">
+                    <div class="form-group">
+                        <input type="email" placeholder="بريدك الإلكتروني" required>
+                    </div>
+                    <button type="submit" class="btn">اشتراك</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2026 مطعم سفره. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+    
+    <!-- Back to top button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
